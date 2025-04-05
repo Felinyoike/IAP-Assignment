@@ -1,0 +1,16 @@
+input:placeholder-shown, 
+textarea:placeholder-shown {
+    box-shadow: none;
+}
+
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px blue;
+}
+
+input.invalid {
+    border: 2px solid red;
+    box-shadow: 0 0 5px 1px red;
+}
+

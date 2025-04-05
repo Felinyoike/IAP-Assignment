@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="fixed form.js" defer></script>
+    </head>
+    <body>
+       <form novalidate id="myform">
+        <div>
+            <p>
+                <fieldset>
+                    <legend>Do you have a national ID</legend>
+                    <label><input type="radio" name="idquery" required value="yes"> YES</label>
+                    <label><input type="radio" name="idquery" required value="NO"> NO</label>
+                </fieldset>
+            </p>
+
+            <p>
+                <label for="course">Enter your degree course (SCT212/SCT211):</label>
+                <input type="text" id="course" pattern="SCT21[1 2]" required placeholder="Example: SCT212">
+            </p>
+
+            <p>
+                <label for="idNo">Enter your ID number:</label>
+                <input type="number" id="idNo" min="10000000" max="99999999" required placeholder="Enter 8-digit ID number">
+            </p>
+
+            <p>
+                <label for="age">Enter your age:</label>
+                <input type="number" id="age" required min="16" max="40" placeholder="16-40">
+            </p>
+
+            <p>
+                <label for="email">Enter your Email Address:</label>
+                <input type="email" id="email" required placeholder="example@example.com">
+            </p>
+
+            <p>
+                <label for="interest">Enter your area of interest:</label>
+                <input type="text" id="interest" list="mylist" required placeholder="Select or enter an interest">
+                <datalist id="mylist">
+                    <option>Networking</option>
+                    <option>Cloud Computing</option>
+                    <option>AI</option>
+                    <option>Android Development</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="txtarea">Please enter additional comments:</label>
+                <textarea maxlength="150" id="txtarea" rows="5" placeholder="Enter your comments here..."></textarea>
+            </p>
+        </div>
+
+        <button>Submit</button>
+       </form> 
+    </body>
+</html>
